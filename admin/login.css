@@ -1,0 +1,148 @@
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 95%;
+  background-color: #6a7fef; /* Soft blue background */
+  padding: 1.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  z-index: 100;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ffffff; /* White text for contrast */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #00bcd4; /* Light cyan color */
+  color: #fff;
+}
+
+/* Table Styling */
+table {
+  width: 85%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+table:hover {
+  transform: translateY(-10px);
+}
+
+th,
+td {
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid #f1f1f1;
+  color: #333; /* Darker text for better readability */
+}
+
+th {
+  background-color: #00bcd4; /* Cyan header for a modern feel */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #ff9800; /* Warm orange color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #fb8c00; /* Darker orange for hover effect */
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Hover Effects for Table Rows */
+table tr:hover {
+  cursor: pointer;
+  background-color: #e7e7e7;
+  transform: scale(1.02);
+}
+
+table th:hover {
+  background-color: #0288d1; /* Deep blue on header hover */
+}
+
+/* Approve Button Styling */
+.approve-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.approve-button:hover {
+  background-color: #388e3c; /* Darker green */
+  transform: scale(1.05);
+}
+
+/* Delete Button Styling */
+.dl_btn {
+  text-decoration: none;
+  color: white;
+  background-color: #f44336; /* Bright red for visibility */
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.dl_btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.1);
+}
+
+.dl_btn:active {
+  background-color: #c62828; /* Even darker red when clicked */
+  transform: scale(1.05);
+}
